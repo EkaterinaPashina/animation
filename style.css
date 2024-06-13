@@ -19,32 +19,51 @@
   justify-content: center;
   background-color: red;
   font-size: 64px;
+  animation: change 1.5s infinite;
 }
 
 .el_2 {
   grid-row: 3/4;
   grid-column: 1/2;
+  animation-delay: 0.1s;
 }
 
 .el_3 {
   grid-row: 2/3;
   grid-column: 2/3;
+  animation-delay: 0.5s;
 }
 
 .el_4 {
   grid-row: 3/4;
   grid-column: 2/3;
+  animation-delay: 0.3s;
 }
 
 .el_5 {
   grid-row: 2/3;
   grid-column: 3/4;
+  animation-delay: 0.4s;
 }
 
 .el_6 {
   grid-row: 1/2;
   grid-column: 3/4;
+  animation-delay: 0.2s;
 }
+
+@keyframes change {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
 
 @media(max-width: 725px) {
   .container {
